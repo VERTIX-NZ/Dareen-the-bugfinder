@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dareen Mazen Khaled | Software Test Analyst | QA Engineer</title>
+    <meta
+      name="description"
+      content="Modern CV website for Dareen Mazen Khaled, ISTQB-certified Software QA Engineer with experience in manual and automation testing, API validation, and enterprise platform quality assurance."
+    />
+    <style>
+      :root {
+        --bg: #0b1020;
+        --bg-soft: #111a33;
+        --card: rgba(11, 16, 32, 0.68);
+        --card-solid: #111a33;
+        --text: #eef4ff;
+        --muted: #b9c7e9;
+        --line: rgba(255, 255, 255, 0.12);
+        --accent-a: #18e7b2;
+        --accent-b: #29b6ff;
+        --accent-c: #ffb347;
+        --accent-d: #ff6b7a;
+        --ok: #41e59f;
+        --warn: #ffd166;
+        --radius-lg: 22px;
+        --radius-md: 14px;
+        --shadow: 0 24px 45px rgba(0, 0, 0, 0.38);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", "Helvetica Neue", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 12% 14%, rgba(41, 182, 255, 0.2) 0%, transparent 36%),
+          radial-gradient(circle at 88% 10%, rgba(255, 179, 71, 0.14) 0%, transparent 34%),
+          radial-gradient(circle at 80% 84%, rgba(24, 231, 178, 0.15) 0%, transparent 42%),
+          linear-gradient(130deg, #080d1c 0%, #0d1530 48%, #0c172f 100%);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 34px 34px;
+        mask-image: radial-gradient(circle at center, black 28%, transparent 100%);
+        z-index: -1;
+      }
+
+      a {
+        color: var(--accent-a);
+      }
+
+      .container {
+        width: min(1100px, 92vw);
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 80;
+        backdrop-filter: blur(12px);
+        background: rgba(8, 13, 28, 0.75);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.8rem 0;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+
+      .brand-mark {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
+        box-shadow: 0 6px 15px rgba(24, 231, 178, 0.35);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .brand-mark::after {
+        content: "";
+        position: absolute;
+        inset: 5px;
+        border: 2px solid rgba(11, 16, 32, 0.75);
+        border-top-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(45deg);
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--text);
+        padding: 0.45rem 0.8rem;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+        font-size: 0.95rem;
+      }
+
+      nav a:hover,
+      nav a:focus-visible {
+        background: rgba(41, 182, 255, 0.14);
+        border-color: rgba(41, 182, 255, 0.45);
+        transform: translateY(-2px);
+        outline: none;
+      }
+
+      .hero {
+        padding: 5.8rem 0 2.8rem;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 1.2rem;
+      }
+
+      .glass {
+        background: linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-main {
+        padding: 2rem 2rem 1.7rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-main::after {
+        content: "";
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(65, 229, 159, 0.3), transparent 70%);
+        right: -70px;
+        top: -70px;
+        pointer-events: none;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.35rem 0.72rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.09);
+        border: 1px solid var(--line);
+        font-size: 0.86rem;
+        color: var(--muted);
+      }
+
+      .eyebrow .pulse {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--ok);
+        box-shadow: 0 0 0 0 rgba(65, 229, 159, 0.7);
+        animation: pulse 1.9s infinite;
+      }
+
+      @keyframes pulse {
+        70% {
+          box-shadow: 0 0 0 10px rgba(65, 229, 159, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(65, 229, 159, 0);
+        }
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin-top: 0.9rem;
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        letter-spacing: 0.02em;
+      }
+
+      .title {
+        margin-top: 0.7rem;
+        color: var(--muted);
+        font-size: clamp(1rem, 2.25vw, 1.25rem);
+      }
+
+      .tagline {
+        margin-top: 1rem;
+        padding: 0.85rem 0.95rem;
+        border-radius: 12px;
+        background: rgba(24, 231, 178, 0.1);
+        border: 1px solid rgba(24, 231, 178, 0.35);
+        max-width: 56ch;
+      }
+
+      .hero-side {
+        padding: 1.2rem;
+        display: grid;
+        gap: 0.75rem;
+        align-content: start;
+      }
+
+      .stat {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        padding: 0.9rem 0.95rem;
+        transition: transform 0.26s ease, border-color 0.26s ease;
+      }
+
+      .stat:hover {
+        transform: translateY(-4px);
+        border-color: rgba(24, 231, 178, 0.45);
+      }
+
+      .stat strong {
+        font-size: 1.22rem;
+        display: block;
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: 0.93rem;
+      }
+
+      main section {
+        padding: 1.35rem 0 0.3rem;
+      }
+
+      .section-card {
+        padding: 1.4rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--line);
+        background: var(--card);
+        box-shadow: var(--shadow);
+        transition: transform 0.28s ease, border-color 0.28s ease, background-color 0.28s ease;
+      }
+
+      .section-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(41, 182, 255, 0.5);
+        background: rgba(13, 21, 48, 0.88);
+      }
+
+      .section-title {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+        margin-bottom: 0.85rem;
+      }
+
+      .section-title .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: linear-gradient(130deg, var(--accent-a), var(--accent-b));
+      }
+
+      .about p,
+      .block p,
+      li,
+      .contact-line {
+        color: var(--muted);
+      }
+
+      .about p {
+        margin: 0;
+        font-size: 1.02rem;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.95rem;
+      }
+
+      .skill-group {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        padding: 0.95rem;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .skill-group h3 {
+        font-size: 1.02rem;
+        margin-bottom: 0.6rem;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+      }
+
+      .tag {
+        padding: 0.35rem 0.6rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.05);
+        font-size: 0.86rem;
+        color: #dce8ff;
+      }
+
+      .coverage {
+        margin-top: 1rem;
+        display: grid;
+        gap: 0.65rem;
+      }
+
+      .coverage-item {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 0.5rem 0.6rem;
+      }
+
+      .coverage-head {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.86rem;
+        margin-bottom: 0.3rem;
+        color: #d4def7;
+      }
+
+      .bar-track {
+        height: 9px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.09);
+        overflow: hidden;
+      }
+
+      .bar-fill {
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--accent-a), var(--accent-b), var(--accent-c));
+        transform-origin: left center;
+        animation: grow 1.1s cubic-bezier(0.25, 0.7, 0.2, 1) both;
+      }
+
+      @keyframes grow {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+        }
+      }
+
+      .timeline {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .exp-center {
+        position: relative;
+        margin-top: 0.5rem;
+      }
+
+      .exp-center::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0.5rem;
+        bottom: 0.5rem;
+        width: 2px;
+        transform: translateX(-50%);
+        background: linear-gradient(180deg, rgba(24, 231, 178, 0.9), rgba(41, 182, 255, 0.8), rgba(255, 179, 71, 0.82));
+        border-radius: 999px;
+      }
+
+      .exp-item {
+        position: relative;
+        width: 50%;
+        margin-bottom: 1rem;
+      }
+
+      .exp-item.left {
+        left: 0;
+        padding-right: 1.8rem;
+      }
+
+      .exp-item.right {
+        left: 50%;
+        padding-left: 1.8rem;
+      }
+
+      .exp-dot {
+        position: absolute;
+        top: 1.18rem;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
+        border: 2px solid #0c172f;
+        box-shadow: 0 0 0 4px rgba(24, 231, 178, 0.16);
+        z-index: 2;
+      }
+
+      .exp-item.left .exp-dot {
+        right: -7px;
+      }
+
+      .exp-item.right .exp-dot {
+        left: -7px;
+      }
+
+      .exp-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.03);
+        padding: 1rem;
+        position: relative;
+        transition: transform 0.24s ease, border-color 0.24s ease;
+        overflow-wrap: anywhere;
+      }
+
+      .exp-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(41, 182, 255, 0.45);
+      }
+
+      .exp-card::after {
+        content: "";
+        position: absolute;
+        top: 1.22rem;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+      }
+
+      .exp-item.left .exp-card::after {
+        right: -8px;
+        border-left: 8px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .exp-item.right .exp-card::after {
+        left: -8px;
+        border-right: 8px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .exp-card h3 {
+        font-size: 1.07rem;
+      }
+
+      .job {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.03);
+        padding: 1rem;
+      }
+
+      .job h3 {
+        font-size: 1.07rem;
+      }
+
+      .meta {
+        color: #d0dcfa;
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
+      }
+
+      .project-block {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding-top: 0.8rem;
+        margin-top: 0.8rem;
+      }
+
+      .project-title {
+        color: #f7fbff;
+        font-weight: 700;
+      }
+
+      .impact {
+        margin-top: 0.4rem;
+        padding: 0.4rem 0.55rem;
+        border-radius: 10px;
+        background: rgba(65, 229, 159, 0.1);
+        border: 1px solid rgba(65, 229, 159, 0.33);
+        color: #d8ffe9;
+        font-size: 0.92rem;
+      }
+
+      ul {
+        margin: 0.5rem 0 0;
+        padding-left: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.38rem;
+      }
+
+      .dual {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .edu,
+      .cert,
+      .contact-box,
+      .humor-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .cert ul {
+        margin-top: 0.3rem;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+      }
+
+      .contact-line {
+        font-size: 0.98rem;
+      }
+
+      .contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        text-decoration: none;
+        color: #e7f4ff;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 0.45rem 0.65rem;
+        transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        white-space: normal;
+      }
+
+      .contact-link:hover,
+      .contact-link:focus-visible {
+        transform: translateY(-2px);
+        border-color: rgba(24, 231, 178, 0.5);
+        background: rgba(24, 231, 178, 0.12);
+        outline: none;
+      }
+
+      .humor-card {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .humor-card::before {
+        content: "";
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 107, 122, 0.34), transparent 70%);
+        right: -48px;
+        top: -48px;
+        pointer-events: none;
+      }
+
+      .humor-card p {
+        margin: 0;
+        color: #ffeef1;
+      }
+
+      footer {
+        padding: 2rem 0 2.6rem;
+        text-align: center;
+        color: #a9badf;
+        font-size: 0.9rem;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px) scale(0.99);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      .bugs {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 220;
+      }
+
+      .bug {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        pointer-events: auto;
+        cursor: pointer;
+        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.35));
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+      }
+
+      .bug .body {
+        position: absolute;
+        width: 14px;
+        height: 16px;
+        left: 15px;
+        top: 14px;
+        border-radius: 50% 50% 44% 44%;
+        background: linear-gradient(180deg, #ff7d8b, #d84c65);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+      }
+
+      .bug .body::before,
+      .bug .body::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 18px;
+        top: -7px;
+        background: rgba(255, 214, 214, 0.85);
+      }
+
+      .bug .body::before {
+        left: 2px;
+        transform: rotate(-22deg);
+      }
+
+      .bug .body::after {
+        right: 2px;
+        transform: rotate(22deg);
+      }
+
+      .bug .head {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        left: 17.5px;
+        top: 10px;
+        background: #342031;
+      }
+
+      .bug.fixed {
+        animation: pop 0.45s ease forwards;
+      }
+
+      .bug1 {
+        left: 8%;
+        top: 26%;
+        animation: drift-a 16s ease-in-out infinite alternate;
+      }
+
+      .bug2 {
+        right: 10%;
+        top: 42%;
+        animation: drift-b 13s ease-in-out infinite alternate;
+      }
+
+      .bug3 {
+        left: 16%;
+        bottom: 10%;
+        animation: drift-c 15s ease-in-out infinite alternate;
+      }
+
+      .bug4 {
+        right: 20%;
+        bottom: 16%;
+        animation: drift-d 17s ease-in-out infinite alternate;
+      }
+
+      @keyframes drift-a {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate(32px, -20px) rotate(6deg);
+        }
+      }
+
+      @keyframes drift-b {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate(-28px, 30px) rotate(-8deg);
+        }
+      }
+
+      @keyframes drift-c {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate(24px, -32px) rotate(4deg);
+        }
+      }
+
+      @keyframes drift-d {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate(-20px, 24px) rotate(-5deg);
+        }
+      }
+
+      @keyframes pop {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        80% {
+          transform: scale(1.35);
+          opacity: 0.35;
+        }
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+
+      .confetti-layer {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 180;
+      }
+
+      .adrenaline-flash {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+          radial-gradient(circle at 50% 45%, rgba(24, 231, 178, 0.2), rgba(41, 182, 255, 0.1), transparent 62%),
+          linear-gradient(120deg, rgba(255, 179, 71, 0.08), rgba(255, 107, 122, 0.06));
+        animation: adrenaline-flash 0.42s cubic-bezier(0.2, 0.85, 0.3, 1) forwards;
+      }
+
+      @keyframes adrenaline-flash {
+        0% {
+          opacity: 0;
+          transform: scale(0.98);
+          filter: saturate(1.1);
+        }
+        35% {
+          opacity: 0.92;
+          transform: scale(1.01);
+          filter: saturate(1.35);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(1.02);
+          filter: saturate(1);
+        }
+      }
+
+      .paper {
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--w);
+        height: var(--h);
+        border-radius: 2px;
+        background: var(--color);
+        opacity: var(--op, 1);
+        transform: translate(-50%, -50%) rotate(0deg);
+        animation: paper-burst 0.95s cubic-bezier(0.18, 0.75, 0.32, 1) forwards;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24);
+      }
+
+      @keyframes paper-burst {
+        0% {
+          opacity: var(--op, 1);
+          transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot)) scale(0.86);
+        }
+      }
+
+      .burst-message {
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        transform: translate(-50%, -50%);
+        background: rgba(8, 13, 28, 0.94);
+        color: #eafff4;
+        border: 1px solid rgba(65, 229, 159, 0.58);
+        border-radius: 999px;
+        padding: 0.42rem 0.82rem;
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        white-space: nowrap;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.36);
+        animation: burst-float 1.08s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      }
+
+      .burst-message.contact {
+        border-color: rgba(41, 182, 255, 0.58);
+        color: #e8f7ff;
+      }
+
+      @keyframes burst-float {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.72);
+          filter: saturate(1.2);
+        }
+        20% {
+          opacity: 1;
+          transform: translate(-50%, -58%) scale(1.05);
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -145%) scale(0.94);
+          filter: saturate(1);
+        }
+      }
+
+      @media (max-width: 920px) {
+        .hero-grid,
+        .dual,
+        .contact-grid,
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .exp-center::before {
+          display: none;
+        }
+
+        .exp-item,
+        .exp-item.right,
+        .exp-item.left {
+          width: 100%;
+          left: 0;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .exp-item .exp-dot,
+        .exp-item.left .exp-dot,
+        .exp-item.right .exp-dot {
+          display: none;
+        }
+
+        .exp-item .exp-card::after,
+        .exp-item.left .exp-card::after,
+        .exp-item.right .exp-card::after {
+          display: none;
+        }
+
+        .hero {
+          padding-top: 5rem;
+        }
+
+        .hero-main,
+        .hero-side,
+        .section-card {
+          padding: 1.1rem;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .nav-wrap {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        nav ul {
+          gap: 0.3rem;
+        }
+
+        nav a {
+          padding: 0.35rem 0.6rem;
+          font-size: 0.88rem;
+        }
+
+        .exp-item,
+        .exp-item.right,
+        .exp-item.left {
+          padding-left: 0;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+
+        html {
+          scroll-behavior: auto;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating decorative QA bugs (easter egg targets) -->
+    <div class="bugs" aria-hidden="true">
+      <button class="bug bug1" type="button" aria-label="Fix bug">
+        <span class="head"></span>
+        <span class="body"></span>
+      </button>
+      <button class="bug bug2" type="button" aria-label="Fix bug">
+        <span class="head"></span>
+        <span class="body"></span>
+      </button>
+      <button class="bug bug3" type="button" aria-label="Fix bug">
+        <span class="head"></span>
+        <span class="body"></span>
+      </button>
+      <button class="bug bug4" type="button" aria-label="Fix bug">
+        <span class="head"></span>
+        <span class="body"></span>
+      </button>
+    </div>
+
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Dareen QA Profile</span>
+        </div>
+        <nav aria-label="Section navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container reveal" id="top">
+        <div class="hero-grid">
+          <article class="glass hero-main">
+            <span class="eyebrow"><span class="pulse"></span>Quality Built for Mission-Critical Systems</span>
+            <h1>DAREEN MAZEN KHALED</h1>
+            <p class="title">Software Test Analyst | QA Engineer | ISTQB-CTFL</p>
+            <p class="tagline">
+              Breaking things professionally so users never have to. I do not always chase bugs, but when I do, I reproduce them with steps and screenshots.
+            </p>
+          </article>
+
+          <aside class="glass hero-side" aria-label="Quick profile highlights">
+            <div class="stat">
+              <strong>3+ Years</strong>
+              <span>Testing large-scale governmental and enterprise platforms</span>
+            </div>
+            <div class="stat">
+              <strong>ISTQB-CTFL</strong>
+              <span>Certified Tester - Foundation Level (2022)</span>
+            </div>
+            <div class="stat">
+              <strong>Languages</strong>
+              <span>Arabic (Native), English (Fluent)</span>
+            </div>
+            <div class="stat">
+              <strong>Focus</strong>
+              <span>Automation, API validation, integrations, regression quality gates</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="container reveal" id="about">
+        <article class="section-card about">
+          <h2 class="section-title"><span class="dot"></span>About</h2>
+          <p>
+            ISTQB-certified Software QA Engineer with 3+ years of experience testing large-scale governmental and enterprise platforms serving millions of users. Strong background in manual and automation testing using Selenium (Java), Playwright, and TestNG. Experienced in API validation, integration testing, regression cycles, and Agile environments. Proven record of preventing critical production defects, improving release stability, and validating complex cross-system integrations in mission-critical environments.
+          </p>
+        </article>
+      </section>
+
+      <section class="container reveal" id="skills">
+        <article class="section-card">
+          <h2 class="section-title"><span class="dot"></span>Skills</h2>
+          <div class="skills-grid">
+            <section class="skill-group" aria-label="Test Automation skills">
+              <h3>Test Automation</h3>
+              <div class="tags">
+                <span class="tag">Selenium WebDriver (Java)</span>
+                <span class="tag">Playwright</span>
+                <span class="tag">TestNG</span>
+                <span class="tag">Page Object Model (POM)</span>
+                <span class="tag">Allure Reporting</span>
+                <span class="tag">Git</span>
+              </div>
+            </section>
+            <section class="skill-group" aria-label="API and backend testing skills">
+              <h3>API &amp; Backend Testing</h3>
+              <div class="tags">
+                <span class="tag">Postman</span>
+                <span class="tag">REST API Testing</span>
+                <span class="tag">SQL &amp; Database Validation</span>
+                <span class="tag">Request/Response Analysis</span>
+              </div>
+            </section>
+            <section class="skill-group" aria-label="Testing types">
+              <h3>Testing Types</h3>
+              <div class="tags">
+                <span class="tag">Manual Testing</span>
+                <span class="tag">Functional Testing</span>
+                <span class="tag">Integration Testing</span>
+                <span class="tag">Regression Testing</span>
+                <span class="tag">Smoke &amp; Exploratory Testing</span>
+                <span class="tag">Mobile Testing (Android/iOS)</span>
+                <span class="tag">Cross-Browser Testing</span>
+              </div>
+            </section>
+            <section class="skill-group" aria-label="Tools and methodologies">
+              <h3>Tools &amp; Methodologies</h3>
+              <div class="tags">
+                <span class="tag">Jira</span>
+                <span class="tag">Azure DevOps (TFS)</span>
+                <span class="tag">IntelliJ IDEA</span>
+                <span class="tag">Agile (Scrum)</span>
+                <span class="tag">STLC / SDLC</span>
+                <span class="tag">Defect Lifecycle Management</span>
+                <span class="tag">Requirements Analysis (BRD, FRS)</span>
+              </div>
+            </section>
+          </div>
+
+          <div class="coverage" aria-label="Testing coverage indicators">
+            <div class="coverage-item">
+              <div class="coverage-head"><span>Requirement Analysis Discipline</span><span>Coverage Mindset</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 96%"></div></div>
+            </div>
+            <div class="coverage-item">
+              <div class="coverage-head"><span>Regression Confidence</span><span>Release Stability</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 94%"></div></div>
+            </div>
+            <div class="coverage-item">
+              <div class="coverage-head"><span>Integration Validation</span><span>Cross-System Focus</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 93%"></div></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="container reveal" id="experience">
+        <article class="section-card">
+          <h2 class="section-title"><span class="dot"></span>Professional Experience</h2>
+
+          <div class="exp-center">
+            <article class="exp-item left">
+              <span class="exp-dot" aria-hidden="true"></span>
+              <div class="exp-card">
+                <h3>Sehhaty Platform – Ministry of Health (MOH)</h3>
+                <p class="meta">Software QA Engineer | TestCrew (Remote – KSA Projects) | Nov 2022 – Present</p>
+                <p class="block">Worked on national-level digital transformation platforms for Saudi governmental entities.</p>
+                <p class="block">Unified national health platform serving millions of citizens.</p>
+                <p class="block"><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>Achieved full requirement coverage through detailed BRD/FRS analysis.</li>
+                  <li>Designed and executed end-to-end test cases for high-impact healthcare modules (Appointments, Vaccination Tracking, Medical Reports).</li>
+                  <li>Managed defect lifecycle in Jira, preventing critical defects from reaching production.</li>
+                  <li>Executed full regression cycles during frequent service releases to maintain platform stability.</li>
+                  <li>Validated cross-system healthcare integrations under strict compliance requirements.</li>
+                </ul>
+                <p class="impact">Impact: Maintained production stability in a mission-critical healthcare environment.</p>
+              </div>
+            </article>
+
+            <article class="exp-item right">
+              <span class="exp-dot" aria-hidden="true"></span>
+              <div class="exp-card">
+                <h3>Smart Inspection System (Inspection Sahab Support)</h3>
+                <p class="meta">Software QA Engineer | TestCrew (Remote – KSA Projects) | Nov 2022 – Present</p>
+                <p class="block">Automation platform for inspection workflow management.</p>
+                <p class="block"><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>Developed comprehensive test plans, suites, and execution reports.</li>
+                  <li>Conducted integrated testing across Web, Backend, and Mobile platforms.</li>
+                  <li>Identified design gaps early through technical document reviews.</li>
+                  <li>Participated in sprint planning, estimations, and daily Agile ceremonies.</li>
+                </ul>
+                <p class="impact">Impact: Reduced rework by identifying functional gaps before UAT phase.</p>
+              </div>
+            </article>
+
+            <article class="exp-item left">
+              <span class="exp-dot" aria-hidden="true"></span>
+              <div class="exp-card">
+                <h3>REDF – Real Estate Development Fund Portal</h3>
+                <p class="meta">Software QA Engineer | TestCrew (Remote – KSA Projects) | Nov 2022 – Present</p>
+                <p class="block">Digital portal serving housing beneficiaries.</p>
+                <p class="block"><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>Validated citizen-facing workflows across web and mobile platforms.</li>
+                  <li>Redesigned test cases to align with evolving business logic.</li>
+                  <li>Collaborated with developers to isolate complex integration defects.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="exp-item right">
+              <span class="exp-dot" aria-hidden="true"></span>
+              <div class="exp-card">
+                <h3>Injaz Platform – Unified Events Sector</h3>
+                <p class="meta">Software QA Engineer | TestCrew (Remote – KSA Projects) | Nov 2022 – Present</p>
+                <p class="block">Government permit issuance system.</p>
+                <p class="block"><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>Performed integration testing between multiple government entities.</li>
+                  <li>Validated regulatory compliance and unified approval workflows.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="exp-item left">
+              <span class="exp-dot" aria-hidden="true"></span>
+              <div class="exp-card">
+                <h3>Auction Systems – ZATCA &amp; MODON</h3>
+                <p class="meta">Software QA Engineer | TestCrew (Remote – KSA Projects) | Nov 2022 – Present</p>
+                <p class="block">QA support for critical governmental systems.</p>
+                <p class="block"><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>Conducted system-level testing aligned with strict regulatory standards.</li>
+                  <li>Ensured high defect detection during system testing phases.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="exp-item right">
+              <span class="exp-dot" aria-hidden="true"></span>
+              <div class="exp-card">
+                <h3>Software Test Engineer</h3>
+                <p class="meta">Vertix Solutions | Sep 2021 – Oct 2023</p>
+                <p class="block">Web-based asset and ticket management system.</p>
+                <p class="block"><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>Performed API testing using Postman to validate backend services.</li>
+                  <li>Conducted responsive and cross-device web testing.</li>
+                  <li>Produced structured test documentation and execution evidence.</li>
+                  <li>Supported release cycles with regression and functional testing.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="container reveal" id="projects">
+        <article class="section-card">
+          <h2 class="section-title"><span class="dot"></span>Test Automation Projects (GitHub Portfolio)</h2>
+          <div class="timeline">
+            <article class="job">
+              <h3>Selenium Automation Framework – OrangeHRM</h3>
+              <ul>
+                <li>Built scalable automation framework using POM.</li>
+                <li>Automated end-to-end HR workflows.</li>
+                <li>Integrated structured reporting and reusable components.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <h3>Playwright UI Automation Project</h3>
+              <ul>
+                <li>Automated modern UI test scenarios.</li>
+                <li>Implemented reliable locator strategies and assertions.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <h3>Selenium Practice Projects</h3>
+              <ul>
+                <li>Developed structured test suites with waits, assertions, and reusable utilities.</li>
+                <li>Demonstrated ability to design maintainable test frameworks.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <h3>API Test Case Repository</h3>
+              <ul>
+                <li>Designed positive and negative API test scenarios.</li>
+                <li>Validated status codes, payload structures, and edge cases.</li>
+              </ul>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="container reveal dual" id="education">
+        <article class="section-card edu">
+          <h2 class="section-title"><span class="dot"></span>Education</h2>
+          <h3>Bachelor of Civil Engineering</h3>
+          <p class="contact-line">Islamic University of Gaza</p>
+          <p class="contact-line">2013 – 2018</p>
+        </article>
+
+        <article class="section-card humor-card" aria-label="QA humor">
+          <h2 class="section-title"><span class="dot"></span>QA Note</h2>
+          <p>Favorite edge case: when everything works on production but nowhere else.</p>
+        </article>
+      </section>
+
+      <section class="container reveal" id="certifications">
+        <article class="section-card cert">
+          <h2 class="section-title"><span class="dot"></span>Certifications</h2>
+          <ul>
+            <li>ISTQB Certified Tester – Foundation Level (2022)</li>
+            <li>Selenium 4 in Java – TestAutomationU</li>
+            <li>Advanced Selenium Frameworks &amp; Page Objects</li>
+            <li>TestNG</li>
+            <li>API Testing Foundations</li>
+            <li>Postman Essential Training</li>
+            <li>SQL for Testers</li>
+            <li>CS50’s Introduction to Computer Science – Harvard University</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="container reveal" id="contact">
+        <article class="section-card contact-box">
+          <h2 class="section-title"><span class="dot"></span>Contact</h2>
+          <div class="contact-grid">
+            <p class="contact-line">
+              <a class="contact-link" href="tel:+970595634091" data-action="phone">📞 +970 595 634 091</a>
+            </p>
+            <p class="contact-line">
+              <a class="contact-link" href="mailto:darin.mazen2022@gmail.com" data-action="email">📧 darin.mazen2022@gmail.com</a>
+            </p>
+            <p class="contact-line"><strong>Role:</strong> Software Test Analyst | QA Engineer | ISTQB-CTFL</p>
+            <p class="contact-line"><strong>Languages:</strong> Arabic (Native), English (Fluent)</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      Built with structured thinking, test-first mindset, and zero tolerance for flaky behavior.
+    </footer>
+
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+
+    <script>
+      // QA console easter eggs
+      console.log("[QA] Boot sequence complete. Running smoke checks on UI...");
+      console.log("[QA] If you cannot reproduce it, is it even a bug?");
+      console.log("[QA] 99 little bugs in the code, take one down, patch it around...");
+
+      // Always start from the top on page open/reload.
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+
+      function resetToTop() {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+
+      // If a stale hash exists from a previous session (e.g. #skills), clear it.
+      if (window.location.hash) {
+        try {
+          history.replaceState(null, document.title, window.location.pathname + window.location.search);
+        } catch (error) {
+          // Ignore and continue; scroll reset still runs.
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        requestAnimationFrame(resetToTop);
+      });
+      window.addEventListener('load', resetToTop);
+      window.addEventListener('pageshow', resetToTop);
+
+      // Scroll reveal animation
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.18, rootMargin: '0px 0px -30px 0px' }
+      );
+
+      revealElements.forEach((el) => observer.observe(el));
+
+      // Bug easter egg interaction
+      const bugs = document.querySelectorAll('.bug');
+      const confettiLayer = document.getElementById('confetti-layer');
+      const contactActions = document.querySelectorAll('[data-action]');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const confettiPalette = ['#18e7b2', '#29b6ff', '#ffb347', '#ff6b7a', '#ffe066', '#7efcff'];
+      let fixedCount = 0;
+
+      function showBurstMessage(originX, originY, message, variant = 'bug') {
+        if (!confettiLayer) {
+          return;
+        }
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        const clampedX = Math.max(90, Math.min(vw - 90, originX));
+        const offsetY = originY > vh * 0.78 ? -34 : -24;
+        const clampedY = Math.max(42, Math.min(vh - 42, originY + offsetY));
+
+        const popup = document.createElement('span');
+        popup.className = variant === 'contact' ? 'burst-message contact' : 'burst-message';
+        popup.textContent = message;
+        popup.style.setProperty('--x', clampedX + 'px');
+        popup.style.setProperty('--y', clampedY + 'px');
+
+        confettiLayer.appendChild(popup);
+        popup.addEventListener('animationend', () => popup.remove(), { once: true });
+      }
+
+      function burstPapers(originX, originY, pieces = 30) {
+        if (reduceMotion || !confettiLayer) {
+          return;
+        }
+
+        const vh = window.innerHeight;
+        const bottomBias = Math.max(0, (originY - vh * 0.64) / (vh * 0.36));
+        const topBias = Math.max(0, (vh * 0.24 - originY) / (vh * 0.24));
+
+        for (let i = 0; i < pieces; i += 1) {
+          const paper = document.createElement('span');
+          const angle = ((Math.PI * 2) / pieces) * i + (Math.random() - 0.5) * 0.45;
+          const distance = 55 + Math.random() * 105;
+          const dx = Math.cos(angle) * distance;
+          const dy = Math.sin(angle) * distance - bottomBias * (58 + Math.random() * 60) + topBias * (46 + Math.random() * 36);
+          const width = 5 + Math.random() * 5;
+          const height = 9 + Math.random() * 7;
+          const rotation = (Math.random() * 640 - 320).toFixed(2) + 'deg';
+          const opacity = (0.82 + Math.random() * 0.18).toFixed(2);
+          const color = confettiPalette[Math.floor(Math.random() * confettiPalette.length)];
+
+          paper.className = 'paper';
+          paper.style.setProperty('--x', originX + 'px');
+          paper.style.setProperty('--y', originY + 'px');
+          paper.style.setProperty('--dx', dx.toFixed(2) + 'px');
+          paper.style.setProperty('--dy', dy.toFixed(2) + 'px');
+          paper.style.setProperty('--rot', rotation);
+          paper.style.setProperty('--w', width.toFixed(2) + 'px');
+          paper.style.setProperty('--h', height.toFixed(2) + 'px');
+          paper.style.setProperty('--color', color);
+          paper.style.setProperty('--op', opacity);
+
+          confettiLayer.appendChild(paper);
+          paper.addEventListener('animationend', () => paper.remove(), { once: true });
+        }
+      }
+
+      function triggerAdrenaline() {
+        if (reduceMotion || !confettiLayer) {
+          return;
+        }
+
+        const flash = document.createElement('span');
+        flash.className = 'adrenaline-flash';
+        confettiLayer.appendChild(flash);
+        flash.addEventListener('animationend', () => flash.remove(), { once: true });
+      }
+
+      function fixBug(event) {
+        const bug = event.currentTarget;
+        if (bug.classList.contains('fixed')) {
+          return;
+        }
+
+        const rect = bug.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        bug.classList.add('fixed');
+        bug.setAttribute('aria-hidden', 'true');
+        fixedCount += 1;
+
+        burstPapers(centerX, centerY, fixedCount === bugs.length ? 40 : 30);
+        triggerAdrenaline();
+
+        if (fixedCount < bugs.length) {
+          showBurstMessage(centerX, centerY, 'Bug fixed! +' + fixedCount + ' release confidence');
+        } else {
+          showBurstMessage(centerX, centerY, 'All visible bugs fixed. Time for regression.');
+        }
+
+        setTimeout(() => {
+          bug.style.display = 'none';
+        }, 430);
+      }
+
+      function activateBug(event) {
+        if (event.type === 'touchstart' || event.type === 'pointerdown') {
+          event.preventDefault();
+        }
+        fixBug({ currentTarget: event.currentTarget });
+      }
+
+      bugs.forEach((bug) => {
+        bug.addEventListener('pointerdown', activateBug);
+        bug.addEventListener('touchstart', activateBug, { passive: false });
+        bug.addEventListener('click', activateBug, { passive: true });
+        bug.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            fixBug({ currentTarget: bug });
+          }
+        });
+      });
+
+      contactActions.forEach((item) => {
+        item.addEventListener('click', () => {
+          const type = item.getAttribute('data-action');
+          const rect = item.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const centerY = rect.top + rect.height / 2;
+          if (type === 'phone') {
+            showBurstMessage(centerX, centerY, 'Opening dialer...', 'contact');
+          } else if (type === 'email') {
+            showBurstMessage(centerX, centerY, 'Opening email client...', 'contact');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
